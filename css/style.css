@@ -38,6 +38,7 @@ body {
   padding: 15px;
   align-items: center;
   margin: 15px 0 0 0;
+  align-items: center;
 }
 
 .font1 {
@@ -65,12 +66,16 @@ body {
 }
 
 .font5 {
-  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight:bold;
   line-height: 0;
   padding: 15px;
   color: #eaede6;
+  align-items: center;
+  margin-top: 5px;
 }
 
 
@@ -156,4 +161,17 @@ input {
   height: 300px;
   width: 300px;
   
+}
+
+.text-footer {
+  display: flex;
+  align-items: center;
+}
+
+#fieldset1 {
+  
+  display: flex;
+  flex-direction: column; 
+
+
 }

@@ -1,6 +1,5 @@
 // selecionar o elemento do campo 1
 let titleForm = document.querySelector('#title-form');
-
 // selecionar o elemento do campo 2
 let descriptionForm = document.querySelector('#description-form');
 // selecionar o elemento do campo 3

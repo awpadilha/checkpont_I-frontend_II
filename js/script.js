@@ -24,8 +24,10 @@ function radioSelecionado(inputs) {
 function enviar(event) {
     event.preventDefault();
 
+    //validação dos inputs
     let radio = radioSelecionado(radioForm);
   
+    //Atribuindo elemento pai 
     let wrapper = document.querySelector('#list-wrapper')
     
     //Criando os elementos do Card
@@ -35,14 +37,14 @@ function enviar(event) {
     let selecao = document.createElement('span');
     let check = document.createElement('span');
 
-
+    //Inserindo novos valores no documento
     title.innerHTML = titleForm.value;
     description.innerHTML = descriptionForm.value;
     img.setAttribute('src', urlForm.value);
     selecao.innerHTML = radio;
-    check.innerHTML = checkForm.checked ? 'Apto' : 'Não apto';
+    check.innerHTML = checkForm.checked ? 'Estou apto' : 'Não estou apto';
     
-    //Criando elemento DIV e os appendChild
+    //Criando elemento DIV
     let item = document.createElement('div');
 
     //Criando os appendChild
@@ -52,5 +54,6 @@ function enviar(event) {
     item.appendChild(selecao);
     item.appendChild(check);
     
+    //Atrinbuindo itens no Card
     wrapper.appendChild(item);
 }

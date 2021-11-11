@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,8 @@
 <body>
     <img src="" alt="">
     <div id="wrapper">
-        <aside id="flex1">
-            <div class="texto">
+        <aside>
+            <div>
                 <h1 class="font1">NEON</h1>
                 <h1 class="font1">GENESIS</h1>
                 <h1 id="font2">EVANGELION</h1>
@@ -21,7 +21,7 @@
                 <p id="font4">Nenhum EVA foi danificado ou destruído durante a realização dessa atividade.</p>
             </div>
             <form id="form">
-                <fieldset id="fieldset1">
+                <fieldset id="fieldset">
                     <h2 class="font5">EVA PRODUCTION MODEL UNIT</h2>
                     <h2 class="font5">SELECIONE A SUA UNIDADE</h2>
                     <br>
@@ -35,17 +35,16 @@
                         <input type="radio" name="option" value="NERV">NERV</input>
                         <input type="radio" name="option" value="WILLE">WILLE</input>
                     </div>
-                    <div id="font8">
-                        <input type="checkbox" id="condicoes"> Li o manual e estou de acordo com o regulamento </input>
+                    <div class="font8">
+                        <input type="checkbox" id="condicoes"> Estou apto para operar a unidade </input>
                     </div>
                 </fieldset>
-
                 <button type="submit" id="btn-form" value="Enviar">Enviar</button>
-
             </form>
         </aside>
         <main>
             <div id="list-wrapper">
+                <!-- Os cards serão inseridos aqui através do JS -->
             </div>
         </main>
     </div>
@@ -53,8 +52,7 @@
     <script src="js/script.js"></script>
 
     <footer id="footer">
-        <p>エヴァンゲリオン</p>
-        <p>Desenvolvido por André Padilha</p>
+        <p>Desenvolvido por<a href="https://github.com/awpadilha" target="_blank"> <b> André Padilha </b> </a></p>
     </footer>
 </body>
 
